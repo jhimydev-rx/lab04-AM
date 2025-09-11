@@ -1,6 +1,8 @@
 package com.example.lab04
 
+import android.media.Image
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -23,6 +25,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.lab04.ui.theme.Lab04Theme
 import kotlinx.coroutines.delay
+import com.example.lab04.R
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.ui.draw.scale
+import androidx.compose.ui.graphics.Color
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,6 +68,7 @@ fun MyColumn() {
         Text("Esto es una prueba columna")
         Spacer(modifier = Modifier.size(16.dp))
         MyIcon()
+        MyImage()
     }
 }
 @Composable
@@ -72,6 +80,18 @@ fun MyIcon(){
         )
         Text("Icono de prueba")
     }
+}
+
+@Composable
+fun MyImage(){
+    Spacer(modifier = Modifier.size(20.dp))
+    Image(
+        painter = painterResource(id = R.drawable.ic_launcher_foreground),
+        contentDescription = "imagen ejemplo",
+        modifier = Modifier.size(120.dp).background(Color.Blue)
+
+    )
+
 }
 
 @Preview(showBackground = true)
