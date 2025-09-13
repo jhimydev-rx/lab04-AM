@@ -78,7 +78,7 @@ fun MyIcon(){
             imageVector = Icons.Default.AccountCircle,
             contentDescription = "Incono prueba"
         )
-        Text("Icono de prueba")
+        Text("Icono de prueba(modificado-jhimy)")
     }
 }
 
