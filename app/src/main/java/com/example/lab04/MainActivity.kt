@@ -88,7 +88,7 @@ fun MyImage(){
     Image(
         painter = painterResource(id = R.drawable.ic_launcher_foreground),
         contentDescription = "imagen ejemplo",
-        modifier = Modifier.size(120.dp).background(Color.Blue)
+        modifier = Modifier.size(120.dp).background(Color.Green)
 
     )
 
