@@ -62,7 +62,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun MyColumn() {
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize().background(Color.Blue)
     ) {
         Spacer(modifier = Modifier.size(40.dp))
         Text("Esto es una prueba columna")
